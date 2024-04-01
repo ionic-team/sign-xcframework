@@ -7,5 +7,5 @@ inputs:
 runs:
   using: composite
   steps:
-    - run: ${{ github.action_path }}/sign.sh $INPUTS_XCFRAMEWORK-PATH
+    - run: ${{ github.action_path }}/sign.sh $INPUT_XCFRAMEWORK-PATH
       shell: bash
