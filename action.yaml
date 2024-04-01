@@ -1,0 +1,11 @@
+name: sign-xcframework
+description: Signs an XCFramework with the Ionic Distribution ID Certificate
+inputs:
+  xcframework-path:
+    description: Path to the xcframework
+    required: true
+runs:
+  using: composite
+  steps:
+    - run: ${{ github.action_path }}/sign.sh $INPUTS_XCFRAMEWORK-PATH
+      shell: bash
