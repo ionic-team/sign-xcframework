@@ -10,5 +10,5 @@ inputs:
 runs:
   using: composite
   steps:
-    - run: ${{ github.action_path }}/sign.sh $INPUT_CERT-TOKEN $INPUT_XCFRAMEWORK-PATH
+    - run: ${{ github.action_path }}/sign.sh ${{ inputs.cert-token }} ${{ inputs.xcframework-path }}
       shell: bash
